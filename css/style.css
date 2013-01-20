@@ -56,4 +56,5 @@ img {
 li.sidebar {
 	list-style-type: none;
 	cursor: pointer;
+	width: 163px;
 }
