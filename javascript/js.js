@@ -7,7 +7,7 @@ $(document).ready(function() {
 		$('li.sidebar').removeClass('on');
 		  
 		//NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
-	 	$('.content').slideUp('normal');
+	 	$('.content').slideUp('slow');
    
 		//IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
 		if($(this).next().is(':hidden') == true) {
