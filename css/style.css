@@ -4,6 +4,9 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	/*
+	background: #478897
+	*/
 }
 body {
 	font-family: Century Gothic, Helvetica, Arial, sans-serif;
