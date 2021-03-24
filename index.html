@@ -10,10 +10,10 @@
 			<div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0" id="navbarCollapseItems">
 				<ul class="navbar-nav ml-auto text-center">
 					<li class="nav-item">
-						<a class="nav-link" href="/fmod"  >FMOD</a>
+						<a class="nav-link" href="/#"  >FMOD</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/metal" >Metal</a>
+						<a class="nav-link" href="/#" >Metal</a>
 					</li>
 				</ul>
 			</div>
@@ -27,10 +27,10 @@
 			<div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2" id="navbarCollapseItems">
 				<ul class="navbar-nav mr-auto text-center">
 					<li class="nav-item">
-						<a class="nav-link" href="/about" >About</a>
+						<a class="nav-link" href="/#" >About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/contact" >Contact</a>
+						<a class="nav-link" href="/#" >Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -43,79 +43,12 @@
         <div class="video_container">
             <div id="audio_reel"></div>
         </div>
-        <p class="lead text-muted" id="more_info">Welcome to my fancy video player. Press play, and more text will appear here to give you some more information on what's playing. Nifty, eh?</p>
-        <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
+        <p class="lead text-muted" id="more_info">Hi, Jeremy</p>
     </div>
     </section>
 </main>
 
 <script>
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    var player;
-
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('audio_reel', {
-            height: '100%',
-            width: '100%',
-            videoId: 'Khccjb47pfY',
-            events: {
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
-
-    var intro = "This is the beginning";
-    var middle = "Middle child, shmiddle child";
-    var outro = "It's the end of the world as we know it, and I feel fine!";
-    function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING) {
-            setInterval(function() {
-                seconds = player.getCurrentTime();
-                    if(seconds > 0 && seconds < 5) {
-                        document.getElementById("more_info").innerHTML = intro;  
-                    }
-                    if(seconds > 5 && seconds < 10) {
-                        document.getElementById("more_info").innerHTML = middle;  
-                    }
-                    if(seconds > 10 && seconds < 25) {
-                        document.getElementById("more_info").innerHTML = outro;  
-                    }
-            }, 100);
-        }
-        if (event.data == YT.PlayerState.ENDED) {
-            
-        }
-    }
-</script>
-
-<script>
-    $('document').ready(function(){
-    var transEffect = Barba.BaseTransition.extend({
-        start: function(){
-            this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
-        },
-        fadeInNewcontent: function(nc) {
-            nc.hide();
-            var _this = this;
-            $(this.oldContainer).fadeOut(1000).promise().done(() => {
-            nc.css('visibility','visible');
-            nc.fadeIn(1000, function(){
-                _this.done();
-            })
-            });
-        }
-    });
-    Barba.Pjax.getTransition = function() {
-        return transEffect;
-    }
-    Barba.Pjax.start();
-    });
 </script>
 
 
