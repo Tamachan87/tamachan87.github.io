@@ -2389,11 +2389,13 @@ a.text-dark:hover, a.text-dark:focus { color: black !important; }
 
 @media print { *, *::before, *::after { text-shadow: none !important; box-shadow: none !important; } a:not(.btn) { text-decoration: underline; } abbr[title]::after { content: " (" attr(title) ")"; } pre { white-space: pre-wrap !important; } pre, blockquote { border: 1px solid #adb5bd; page-break-inside: avoid; } thead { display: table-header-group; } tr, img { page-break-inside: avoid; } p, h2, h3 { orphans: 3; widows: 3; } h2, h3 { page-break-after: avoid; } @page { size: a3; } body { min-width: 992px !important; } .container { min-width: 992px !important; } .navbar { display: none; } .badge { border: 1px solid #000; } .table { border-collapse: collapse !important; } .table td, .table th { background-color: #fff !important; } .table-bordered th, .table-bordered td { border: 1px solid #dee2e6 !important; } .table-dark { color: inherit; } .table-dark th, .table-dark td, .table-dark thead th, .table-dark tbody + tbody { border-color: #dee2e6; } .table .thead-dark th { color: inherit; border-color: #dee2e6; } }
 
-@font-face { font-family: SansForgetica; src: url(font/SansForgetica.otf); }
+@font-face { font-family: Audiowide-Regular; src: url(font/Audiowide-Regular.ttf); }
 
-.navbar { background-color: #000000; background-image: url("/assets/img/gun-metal.png"); padding: 0px !important; }
+body { background-color: #2a2a2e; }
 
-.navbar-brand { font-family: SansForgetica; color: #d90042 !important; margin-left: 20px; margin-right: 20px; }
+.navbar { background-color: #1A1A1A; padding: 0px !important; }
+
+.navbar-brand { font-family: Audiowide-Regular; color: #d90042 !important; margin-left: 20px; margin-right: 20px; }
 
 .nav-link { font-family: 'Open Sans', sans-serif; }
 
@@ -2407,13 +2409,13 @@ a.text-dark:hover, a.text-dark:focus { color: black !important; }
 
 .content { font-family: 'Open Sans', sans-serif; }
 
-.jumbotron { background-color: #1A1A1A; background-image: url("/assets/img/gun-metal.png"); color: #0082d9; }
+.jumbotron { background-color: #1A1A1A; color: #0082d9; }
 
 .jumbotron a { color: #E5E543 !important; }
 
 h1, h2, h3, strong { color: #d90042; }
 
-.card-header { background: darkcyan !important; }
+.card-header { background: #2a2a2e !important; }
 
 .video_container { width: 100%; height: auto; }
 

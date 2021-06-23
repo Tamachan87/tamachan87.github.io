@@ -1,6 +1,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="/assets/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/037a4365d0.js" crossorigin="anonymous"></script>
 		<link href="//vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
 		<script src="//vjs.zencdn.net/7.3.0/video.min.js"></script>
 	</head>
@@ -36,286 +38,159 @@
 			</div>
 		</nav>
 		<div class="content">
-			<head>
-		<!-- Include Amplitude JS -->
-    <script type="text/javascript" src="/assets/js/amplitude.min.js"></script>
-		<!-- Include Style Sheet -->
-		<link rel="stylesheet" type="text/css" href="/assets/css/app.css" />
-</head>
-<main role="main">
-    <section class="jumbotron text-center">
+			<main role="main">
+    <section class="jumbotron text-left">
         <div class="container">
-            <h1>Metal Music Reel</h1>
-            <div id="amplitude-player">
-                <!-- Left Side Player -->
-                <div id="amplitude-left">
-                    <img data-amplitude-song-info="cover_art_url" class="album-art" />
-                    <div class="amplitude-visualization" id="large-visualization">
-                    </div>
-                    <div id="player-left-bottom">
-                        <div id="time-container">
-                            <span class="current-time">
-								<span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
-                            </span>
-                            <div id="progress-container">
-                                <div class="amplitude-wave-form">
-                                </div>
-                                <input type="range" class="amplitude-song-slider" />
-                                <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
-                                <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
-                            </div>
-                            <span class="duration">
-								<span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
-                            </span>
-                        </div>
-                        <div id="control-container">
-                            <div id="repeat-container">
-                                <div class="amplitude-repeat" id="repeat"></div>
-                                <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
-                            </div>
-                            <div id="central-control-container">
-                                <div id="central-controls">
-                                    <div class="amplitude-prev" id="previous"></div>
-                                    <div class="amplitude-play-pause" id="play-pause"></div>
-                                    <div class="amplitude-next" id="next"></div>
-                                </div>
-                            </div>
-                            <div id="volume-container">
-                                <div class="volume-controls">
-                                    <div class="amplitude-mute amplitude-not-muted"></div>
-                                    <input type="range" class="amplitude-volume-slider" />
-                                    <div class="ms-range-fix"></div>
-                                </div>
-                                <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle-right"></div>
-                            </div>
-                        </div>
-                        <div id="meta-container">
-                            <span data-amplitude-song-info="name" class="song-name"></span>
-                            <div class="song-artist-album">
-                                <span data-amplitude-song-info="artist"></span>
-                                <span data-amplitude-song-info="album"></span>
-                            </div>
+            <h1 class="display-4">Heavy Metal</h1>
+            <h3>Original &amp; Commissioned Work</h3>
+            <div class="card-deck row">
+                <div class="col-sm-6">
+                    <div class="card text-white border-info bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Fight Fight Fight!</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Original</h6>
+                            <audio controls="">
+                                <source src="/assets/files/Fight Fight Fight.ogg" type="audio/ogg" />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="card-text">This is a strung together version of a horizontal re-sequencing FMOD Studio event. This was composed with a hard and fast fighting game in mind.</p>
                         </div>
                     </div>
                 </div>
-                <!-- End Left Side Player -->
-                <!-- Right Side Player -->
-                <div id="amplitude-right">
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
+                <div class="col-sm-6">
+                    <div class="card text-white border-info bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">The Hollywood Square ft. LukkySparxx</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Commissioned</h6>
+                            <audio controls="">
+                                <source src="/assets/files/Hollywood Square.ogg" type="audio/ogg" />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="card-text">Commissioned by an up-and-coming pro wrestler, this theme was requested to feature a camera shutter and an awesome hair metal scream.</p>
                         </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">Risin' High (feat Raashan Ahmad)</span>
-                            <span class="song-artist">Ancient Astronauts</span>
-                        </div>
-                        <a href="https://switchstancerecordings.bandcamp.com/track/risin-high-feat-raashan-ahmad" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">3:30</span>
-                    </div>
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
-                        </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">The Gun</span>
-                            <span class="song-artist">Lorn</span>
-                        </div>
-                        <a href="https://lorn.bandcamp.com/" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">3:16</span>
-                    </div>
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
-                        </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">Anvil</span>
-                            <span class="song-artist">Lorn</span>
-                        </div>
-                        <a href="https://lorn.bandcamp.com/" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">3:32</span>
-                    </div>
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
-                        </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">I Came Running</span>
-                            <span class="song-artist">Ancient Astronauts</span>
-                        </div>
-                        <a href="https://switchstancerecordings.bandcamp.com/track/i-came-running" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">3:30</span>
-                    </div>
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
-                        </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">First Snow</span>
-                            <span class="song-artist">Emancipator</span>
-                        </div>
-                        <a href="https://emancipator.bandcamp.com" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">5:12</span>
-                    </div>
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="5">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
-                        </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">Terrain</span>
-                            <span class="song-artist">pg.lost</span>
-                        </div>
-                        <a href="https://pglost.bandcamp.com/track/terrain" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">5:29</span>
-                    </div>
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="6">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
-                        </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">Vorel</span>
-                            <span class="song-artist">Russian Circles</span>
-                        </div>
-                        <a href="https://russiancircles.bandcamp.com/track/vorel" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">5:29</span>
-                    </div>
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="7">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
-                        </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">Intro / Sweet Glory</span>
-                            <span class="song-artist">Jimkata</span>
-                        </div>
-                        <a href="http://jimkata.bandcamp.com/track/intro-sweet-glory" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">2:39</span>
-                    </div>
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="8">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
-                        </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">Offcut #6</span>
-                            <span class="song-artist">Little People</span>
-                        </div>
-                        <a href="https://littlepeople.bandcamp.com/track/offcut-6" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">1:00</span>
-                    </div>
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="9">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
-                        </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">Dusk To Dawn</span>
-                            <span class="song-artist">Emancipator</span>
-                        </div>
-                        <a href="https://emancipator.bandcamp.com/track/dusk-to-dawn-2" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">5:25</span>
-                    </div>
-                    <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
-                        <div class="song-now-playing-icon-container">
-                            <div class="play-button-container">
-                            </div>
-                            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg" />
-                        </div>
-                        <div class="song-meta-data">
-                            <span class="song-title">Anthem</span>
-                            <span class="song-artist">Emancipator</span>
-                        </div>
-                        <a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
-                            <img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg" />
-                            <img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg" />
-                        </a>
-                        <span class="song-duration">5:40</span>
                     </div>
                 </div>
-                <!-- End Right Side Player -->
             </div>
-            <!-- End Amplitdue Player -->
+            <div class="card-deck row">
+                <div class="col-sm-6">
+                    <div class="card text-white border-info bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Pablo's Quest</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Commissioned</h6>
+                            <audio controls="">
+                                <source src="/assets/files/Pablo's Quest.ogg" type="audio/ogg" />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="card-text">Commissioned by a new content creator for their YouTube, Twitch, and podcast intro. The requirements were to include 8-bit and 16-bit chiptune.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white border-info bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Character Theme - Charlotte Biose</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Original</h6>
+                            <audio controls="">
+                                <source src="/assets/files/Character Theme - Charlotte Biose.wav" type="audio/wav" />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="card-text">Composed with a charismatic thief from an RPG or stealth game in mind. It is designed to loop indefinitely. Not heavy metal but it's nice to have variety.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck row">
+                <div class="col-sm-6">
+                    <div class="card text-white border-info bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Analog:UE Type-S</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Original</h6>
+                            <audio controls="">
+                                <source src="/assets/files/Tamachan87 - Analog-UE Type-S.ogg" type="audio/ogg" />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="card-text">Originally started as a commission for a friend starting their wrestling career, requiring a dial-up modem sound, this has morphed into it's own fun little metal/chiptune thing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white border-info bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Lilith's Cavern</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Original</h6>
+                            <audio controls="">
+                                <source src="/assets/files/Tamachan87 - Lilith's Cavern.ogg" type="audio/ogg" />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="card-text">I was playing a lot of dungeon crawlers and got inspiration to make this. It reminds me a lot of Diablo or Torchlight.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <h3>Heavy Metal Covers</h3>
+        <p>Somewhere in the hilarious misadventure that is my life, I earned the reputation for making heavy metal covers of existing works. Here's some examples.</p>
+        <div class="card-deck row">
+            <div class="card-deck">
+                <div class="col-sm-6">
+                    <div class="card text-white border-info bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Retro Warriors Podcast</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Original</h6>
+                            <audio controls="">
+                                <source src="/assets/files/covers/7415.wav" type="audio/wav" />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <h6 class="card-subtitle mb-2 text-muted">Cover</h6>
+                            <audio controls="">
+                                <source src="/assets/files/covers/Retro Warriors - Press Start to Play 2019.wav" type="audio/wav" />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="card-text">Originally a fan made cover, the Retro Warriors team liked it so much they used it as their official intro from episode 200.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white border-info bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Doctrine and Devotion Podcast</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Original</h6>
+                            <audio controls="">
+                                <source src="/assets/files/covers/Contagious.mp3" type="audio/mp3" />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <h6 class="card-subtitle mb-2 text-muted">Cover</h6>
+                            <audio controls="">
+                                <source src="/assets/files/covers/Doctrine and Devotion - 2.1.mp3" type="audio/mp3" />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="card-text">Commissioned for a podcast, they wanted a doom metal cover of their original music. It originally had a much slower feel going at half speed but we felt that would be too long before long time listeners would recognise the orginal melody, so it was sped up.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card-deck row">
+            <div class="col-sm-6">
+                    <div class="card text-white border-info bg-dark mb-3">
+                        <div class="card-deck-row">
+                        <div class="card-deck">
+                                <div class="card-body">
+                                    <h5 class="card-title">William Tell Overture</h5>
+                                    <audio controls="">
+                                        <source src="/assets/files/covers/William Tell Overture Full.wav" type="audio/wav" />
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <p class="card-text">Why not.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
         </div>
     </section>
-    <div class="album py-5 bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card bg-secondary mb-4 box-shadow">
-                        <music></music>
-                        <div class="card-body">
-                            <p class="card-text">First extra song</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-secondary mb-4 box-shadow">
-                        <music></music>
-                        <div class="card-body">
-                            <p class="card-text">Second extra song.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-secondary mb-4 box-shadow">
-                        <music></music>
-                        <div class="card-body">
-                            <p class="card-text">Third extra song.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </main>
 <footer>
-    <script src="/assets/js/music_player.js"></script>
 </footer>
 
 		</div>
@@ -326,7 +201,5 @@
 		<script src="/assets/vendor/bootstrap.min.js"></script>
 		<script src='/assets/js/videojs.thumbnails.js'></script>
 		<link href="/assets/css/videojs.thumbnails.css" rel="stylesheet" />
-		<link rel="stylesheet" href="/assets/css/music_player/app.css" />
-		<script type="text/javascript" src="/assets/js/amplitude.min.js"></script>
 	</footer>
 </html>

@@ -1,6 +1,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="/assets/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/037a4365d0.js" crossorigin="anonymous"></script>
 		<link href="//vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
 		<script src="//vjs.zencdn.net/7.3.0/video.min.js"></script>
 	</head>
@@ -37,60 +39,138 @@
 		</nav>
 		<div class="content">
 			<main role="main">
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1>Game Audio Reel</h1>
-            <div class="container video_block">
-                <div class="row align-items-center">
-                    <div class="col-md-9">
-                        <video id="jsPlayer" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" poster="//vjs.zencdn.net/v/oceans.png" data-setup="{}">
-                            <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />&lt;/source&gt;
-                            <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm" />&lt;/source&gt;
-                            <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg" />&lt;/source&gt;
-                            <p class="vjs-no-js">
-                                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                                <a href="https://videojs.com/html5-video-support/" target="_blank">
-                            supports HTML5 video
-                            </a>
-                            </p>
-                        </video>
-                    </div>
-                    <div class="col-md">
-                    <h3>More info</h3>
-                        <div class="video_more_info">
-                            <p id="more_info">Welcome to my fancy video player. Press play, and more text will appear here to give you some more information on what's playing. Nifty, eh? Welcome to my fancy video player. Press play, and more text will appear here to give you some more information on what's playing. Nifty, eh?Welcome to my fancy video player. Press play, and more text will appear here to give you some more information on what's playing. Nifty, eh?Welcome to my fancy video player. Press play, and more text will appear here to give you some more information on what's playing. Nifty, eh? Welcome to my fancy video player. Press play, and more text will appear here to give you some more information on what's playing. Nifty, eh? Welcome to my fancy video player. Press play, and more text will appear here to give you some more information on what's playing. Nifty, eh?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="jumbotron text-left">
+        <div class="container">        
+            <h1 class="display-4">Contact</h1>
+            <p>Feel free to contact me in regards to getting awesome metal tunes in <i>your</i> game today!</p>
+            <p>PLEASE NOTE: Due to an incompatibility with my bank, I can no longer accept exposure as a form of payment.</p>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xoqywgvw" method="post">
+                <fieldset id="fs-frm-inputs">
+                    <input class="text-white border-info bg-dark mb-3" type="text" name="name" id="full-name" placeholder="Name" required="" />
+                    <input class="text-white border-info bg-dark mb-3" type="email" name="_replyto" id="email-address" placeholder="Email Address" required="" />
+                    <textarea class="text-white border-info bg-dark mb-3" rows="5" name="message" id="message" placeholder="Please gush about my work here." required=""></textarea>
+                    <input class="text-white border-info bg-dark mb-3" type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+                </fieldset>
+                <input type="submit" value="Submit" />
+            </form>
         </div>
     </section>
 </main>
 
-<script>
-    var intro = "This is the beginning";
-    var middle = "Middle child, shmiddle child";
-    var outro = "It's the end of the world as we know it, and I feel fine!";
-    
-    var player = videojs("jsPlayer");
-    
-    player.on('timeupdate', function() {
-        console.log(this.currentTime());
+<style>/* reset */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 5;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/*
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+*/
 
-        seconds = player.currentTime();
-        if(seconds > 0 && seconds < 5) {
-            document.getElementById("more_info").innerHTML = intro;  
-        }
-        if(seconds > 5 && seconds < 10) {
-            document.getElementById("more_info").innerHTML = middle;  
-        }
-        if(seconds > 10 && seconds < 25) {
-            document.getElementById("more_info").innerHTML = outro;  
-        }
-    });
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: .25rem;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
+}
 
-    document.getElementById("more_info").style.height = document.getElementById("jsPlayer").scrollHeight;
-</script>
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
+}
+</style>
 
 
 		</div>
@@ -101,7 +181,5 @@
 		<script src="/assets/vendor/bootstrap.min.js"></script>
 		<script src='/assets/js/videojs.thumbnails.js'></script>
 		<link href="/assets/css/videojs.thumbnails.css" rel="stylesheet" />
-		<link rel="stylesheet" href="/assets/css/music_player/app.css" />
-		<script type="text/javascript" src="/assets/js/amplitude.min.js"></script>
 	</footer>
 </html>
