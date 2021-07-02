@@ -57,10 +57,18 @@ player2.on('timeupdate', function() {
 
  //document.getElementById("more_info").style.height = document.getElementById("jsPlayer").scrollHeight;
 
- $(".vjs-big-play-button").on("mouseover", function() {
-    $(this).animate({height: '+=20px'},500);
-});
-$(".vjs-big-play-button").on("mouseout", function() {
-    $(".vjs-big-play-button").stop();
-    $(this).animate({height: '-=20px'},500);
+
+
+var boxWidth = $(".vjs-big-play-button").width();
+var boxHeight = $(".vjs-big-play-button").height();
+$(".vjs-big-play-button").mouseenter(function(){
+    $(this).animate({
+        width: "+=10",
+        height: "+=5"
+    });
+}).mouseleave(function(){
+    $(this).animate({
+        width: boxWidth,
+        height: boxHeight
+    });
 });
