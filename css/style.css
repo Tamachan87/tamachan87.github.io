@@ -40,7 +40,8 @@ p.intro {
 	color: #0082D6;
 }
 a {
-	color: #555;
+	color: #0082D6;
+	font-weight: bold;
 }
 a:hover, a:focus {
 	text-decoration: none;
